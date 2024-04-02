@@ -15,10 +15,22 @@ int  main(){
 	 
 	m.b = (double *)malloc(m.nn * sizeof(double));
 	 
-     mnozina.nn=scanf("%d",mnozina.nn);
+	printf("zadajte prvky mnoziny");
+	for(i=0;i<m.nn;i++){
+	    scanf("%lf",&m.b[i]);
+     }
+     
+     printf("vasa mnozina:");
+     for(i=0;i<m.nn;i++){
+          printf("%lf\n",&m.b[i]);
+     }
+	
+	free(m.b);
+	
+/*    mnozina.nn=scanf("%d",mnozina.nn);
 	for(i=0;i<nn;i++){
 			mnozina.b[i]=scanf("%lf",mnozina.b[i]);
 			printf("%lf",mnozina.b[i]);
-		}
+		}*/
 	
 }
