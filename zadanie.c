@@ -2,7 +2,7 @@
 
 typedef struct{
      int nn;//pocet prvkov
-     double *b[nn];
+     double *b;
 }mnozina;
 
 int  main(){
